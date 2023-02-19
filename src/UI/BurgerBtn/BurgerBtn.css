@@ -1,0 +1,132 @@
+nav {
+    height: 50px;
+    width: 100%;
+
+    position: fixed;
+
+    z-index: 50;
+
+    display: none;
+    align-items: center;
+}
+
+.burger-btn {
+    width: 20px;
+    height: 20px;
+
+    margin-left: 20px;
+    position: relative;
+
+    cursor: pointer;
+}
+
+.burger-btn span{
+    width: 20px;
+    height: 2px;
+
+    background-color: black;
+
+    content: '';
+    position: absolute;
+    top: 9px;
+}
+
+
+.burger-btn::before {
+    width: 20px;
+    height: 2px;
+
+    background-color: black;
+
+    content: '';
+    position: absolute;
+    top: 0;
+    
+}
+
+.burger-btn::after {
+    width: 20px;
+    height: 2px;
+
+    background-color: black;
+
+    content: '';
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+.menu-btn {
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    left: 20px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+}
+
+
+.menu-btn__burger {
+    width: 20px;
+    height: 3px;
+
+    background-color: red;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {    
+    width: 20px;
+    height: 3px;
+
+    content: '';
+    position: absolute;
+
+    background-color: red;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    
+    transition: all 0.2s ease-in-out;
+}
+
+
+.menu-btn__burger::before {
+    transform: translateY(6px);
+}
+
+.menu-btn__burger::after {
+    transform: translateY(-6px);
+}
+
+/* ANIMATION */
+
+.menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    /* background: ; */
+    box-shadow: none;
+  }
+  
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+    }
+}

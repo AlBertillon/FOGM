@@ -1,0 +1,50 @@
+.content {
+    width: 100%;
+    padding: 10px;
+
+    background-color: #696969;
+
+    display: flex;
+    justify-content: center;
+
+    color: white;
+}
+
+.wrapper-list-info {
+    width: 1000px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    column-gap: 8px;
+}
+
+
+.info-item {
+    position: relative;
+
+    width: 325px;
+    height: 300px;
+
+    background: white;
+
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+
+    background-size: 125% 100%;
+    transition: all .8 ease-in-out;
+
+}
+
+.info-item:hover {
+    background-size: 135% 110%;
+    transition: all .8 ease-in-out;
+}
+
+.description-item {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+}

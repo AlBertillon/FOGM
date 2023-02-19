@@ -1,0 +1,26 @@
+.game-menu {
+    position: fixed;
+    right: 5px;
+    top: 85px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    width: 60px;
+    max-height: 90%;
+    height: 100%;
+    padding: 20px 0; 
+
+    background-color: #131a20;
+
+    border-radius: 20px;
+    z-index: 50;
+    flex-direction: column-reverse ;
+}
+
+.buttonMenu {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+

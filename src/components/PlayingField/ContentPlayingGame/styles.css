@@ -1,0 +1,61 @@
+.content-playing-field {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+}
+
+.description-chapters {
+    max-width: 45%;
+    width: 100%;
+    height: 100%;
+
+    background-color: #f1e9d2;
+    box-shadow: inset 0px 0px 60px black;
+
+    overflow: auto;
+    padding: 10px;
+
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.description-chapters::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+
+    width: 90%;
+    height: 100%;
+}
+
+.location-map {
+    max-width: 100%;
+    width: 100%;
+    height: 500px;
+    /* background: url('https://i.pinimg.com/736x/ba/38/f7/ba38f7ae9714b7d0cea66ebab0540c11.jpg'); */
+    background-size: 100% 100%;
+    border: 1px solid black;
+    border-left: 5px solid black;
+}
+
+.description-location-map {
+    width: 100%;
+    height: 50%;
+
+    background-color: #f1e9d2;
+    overflow: auto;
+    border-left: 5px solid black;
+
+    overflow: auto;
+
+    padding-right: 50px;
+    padding-left: 10px;
+}

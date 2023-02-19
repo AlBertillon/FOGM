@@ -1,0 +1,41 @@
+.header {
+    position: fixed;
+    top: 0;
+
+    width: 100vw;
+    height: 80px;
+
+    background-color: #131a20;
+    border-bottom: 3px solid red;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+    font-family: fantasy;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navigation a{
+   color: white;
+   text-decoration: none;
+}
+
+.navigation a:hover{
+   color: red;
+   text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px){
+    .navigation {
+        display: none;
+    }
+}
