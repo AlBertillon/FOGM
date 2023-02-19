@@ -33,13 +33,13 @@
     cursor: pointer;
 
     background-size: 125% 100%;
-    transition: all .8 ease-in-out;
+    transition: all .3s ease-in-out;
 
 }
 
 .info-item:hover {
     background-size: 135% 110%;
-    transition: all .8 ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .description-item {
