@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import PlayingField from './components/PlayingField/PlayingField';
-import StartMenu from './components/StartMenu/StartMenu';
+import Routers from './components/Routers';
+import PlayingField from './page/PlayingField/PlayingField';
+import Home from './page/StartMenu/Home';
 
 
 function App() {
   return (
     <div className="App">
-      <StartMenu />
-      {/* <PlayingField /> */}
+      <Routers />
     </div>
   );
 }

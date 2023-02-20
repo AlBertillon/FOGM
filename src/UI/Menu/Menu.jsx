@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Menu.css'
 
 export const Menu = ({header, items, active, setActive}) => {
@@ -10,9 +11,7 @@ export const Menu = ({header, items, active, setActive}) => {
             <ul>
                 {items.map(el => 
                     <li  key={el.id}>
-                        <a href={el.href}>
-                            {el.title}
-                        </a>
+                        <Link to={el.href}>{el.title}</Link>
                     </li>   
                     )}
             </ul>

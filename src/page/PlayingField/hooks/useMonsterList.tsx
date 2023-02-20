@@ -28,5 +28,5 @@ export const useMonsterList = () => {
         fetchMonstertList()
     }, [])
 
-    return { monsters, loading }
+    return { monsters, loading, error }
 }
